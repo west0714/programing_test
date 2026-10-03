@@ -1,0 +1,9 @@
+name: 第1回 環境構築 print(1+2)
+mode: stdout
+model_answer: ../model/01_print/answer.py
+should_not_pass:
+  - ../model/01_print/ng_print3.py
+tests:
+  - expected: "3"
+require: [print, add]
+allowed_level: 1

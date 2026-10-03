@@ -1,0 +1,14 @@
+# （サンプル）複数要素を組み合わせる課題の書き方例。実際の課題ではない。
+# 課題: 整数 n を入力し、1 から n までを for 文で1行ずつ表示する
+name: （サンプル）for文 1からnまで表示
+mode: stdin_stdout
+model_answer: ../model/sample_for/answer.py   # expected を省略したテストは模範解答の出力を使う
+should_not_pass:                              # AUTO_PASS になってはいけない例（設定の自己検証）
+  - ../model/sample_for/ng_hardcode.py
+  - ../model/sample_for/ng_for_unused.py
+tests:              # 入力を変えた複数ケースにするとハードコードを防げる
+  - stdin: "5"
+  - stdin: "3"
+  - stdin: "1"
+require: [input, int, for, print]
+nesting: ["print in for"]

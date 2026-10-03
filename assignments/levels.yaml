@@ -1,0 +1,13 @@
+# 授業回ごとに「その回で新しく習う要素」を書く（前の回の分は自動で累積される）。
+# 課題設定の allowed_level: n で参照し、ここに無い要素はCSVの unlearned 列に警告として出る。
+# 判定（AUTO_PASS / NEEDS_REVIEW）には影響しない。
+#
+# 書ける名前:
+#   概念名           grader/concepts.py の CONCEPTS のキー（print, for, if, list ...）
+#   組込み関数       "sum()" のように () を付ける（CONCEPTS にあるもの以外）
+#   メソッド         ".split()" のように . と () を付ける
+#   import           "import:math"
+#
+# ※ 教科書の進行に合わせて授業ごとに追記・修正すること（以下は仮）
+levels:
+  1: [print, add, sub, mult, div]

@@ -1,0 +1,8 @@
+# 個人情報（氏名入りファイル名・学生コード）を含むため絶対にコミットしない
+submissions/
+results/
+
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
